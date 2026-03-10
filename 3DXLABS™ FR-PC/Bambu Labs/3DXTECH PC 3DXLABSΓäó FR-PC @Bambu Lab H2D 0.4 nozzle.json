@@ -29,6 +29,12 @@
     "cool_plate_temp_initial_layer": [
         "0"
     ],
+    "cooling_perimeter_transition_distance": [
+        "10"
+    ],
+    "cooling_slowdown_logic": [
+        "uniform_cooling"
+    ],
     "counter_coef_1": [
         "0"
     ],
@@ -81,7 +87,18 @@
     "filament_adhesiveness_category": [
         "500"
     ],
+    "filament_bridge_speed": [
+        "25",
+        "25"
+    ],
     "filament_change_length": [
+        "10"
+    ],
+    "filament_change_length_nc": [
+        "10"
+    ],
+    "filament_cooling_before_tower": [
+        "10",
         "10"
     ],
     "filament_cost": [
@@ -94,8 +111,36 @@
         "nil",
         "nil"
     ],
+    "filament_dev_ams_drying_ams_limitations": [
+        ""
+    ],
+    "filament_dev_ams_drying_heat_distortion_temperature": [
+        "0"
+    ],
+    "filament_dev_ams_drying_temperature": [
+        "0"
+    ],
+    "filament_dev_ams_drying_time": [
+        "0"
+    ],
+    "filament_dev_chamber_drying_bed_temperature": [
+        "0"
+    ],
+    "filament_dev_chamber_drying_time": [
+        "0"
+    ],
+    "filament_dev_drying_cooling_temperature": [
+        "0"
+    ],
+    "filament_dev_drying_softening_temperature": [
+        "0"
+    ],
     "filament_diameter": [
         "1.75"
+    ],
+    "filament_enable_overhang_speed": [
+        "1",
+        "1"
     ],
     "filament_end_gcode": [
         "; filament end gcode \n"
@@ -116,7 +161,7 @@
         "0",
         "0"
     ],
-    "filament_id": "P1f82332",
+    "filament_id": "P2d725e9",
     "filament_is_support": [
         "0"
     ],
@@ -132,12 +177,39 @@
         "15"
     ],
     "filament_notes": "",
+    "filament_overhang_1_4_speed": [
+        "0",
+        "0"
+    ],
+    "filament_overhang_2_4_speed": [
+        "0",
+        "0"
+    ],
+    "filament_overhang_3_4_speed": [
+        "0",
+        "0"
+    ],
+    "filament_overhang_4_4_speed": [
+        "0",
+        "0"
+    ],
+    "filament_overhang_totally_speed": [
+        "10",
+        "10"
+    ],
     "filament_pre_cooling_temperature": [
+        "0",
+        "0"
+    ],
+    "filament_pre_cooling_temperature_nc": [
         "0",
         "0"
     ],
     "filament_prime_volume": [
         "45"
+    ],
+    "filament_prime_volume_nc": [
+        "60"
     ],
     "filament_printable": [
         "3"
@@ -146,13 +218,25 @@
         "0",
         "0"
     ],
+    "filament_ramming_travel_time_nc": [
+        "0",
+        "0"
+    ],
     "filament_ramming_volumetric_speed": [
+        "-1",
+        "-1"
+    ],
+    "filament_ramming_volumetric_speed_nc": [
         "-1",
         "-1"
     ],
     "filament_retract_before_wipe": [
         "nil",
         "nil"
+    ],
+    "filament_retract_length_nc": [
+        "10",
+        "10"
     ],
     "filament_retract_restart_extra": [
         "nil",
@@ -191,7 +275,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "3DXTECH PC 3DXLABS FR-PC @Bambu Lab H2D 0.4 nozzle"
+        "3DXTECH PC 3DXLABS™ FR-PC @Bambu Lab H2D 0.4 nozzle"
     ],
     "filament_shrink": [
         "98%"
@@ -201,6 +285,21 @@
     ],
     "filament_start_gcode": [
         "; filament start gcode\n"
+    ],
+    "filament_tower_interface_pre_extrusion_dist": [
+        "10"
+    ],
+    "filament_tower_interface_pre_extrusion_length": [
+        "0"
+    ],
+    "filament_tower_interface_print_temp": [
+        "-1"
+    ],
+    "filament_tower_interface_purge_volume": [
+        "20"
+    ],
+    "filament_tower_ironing_area": [
+        "4"
     ],
     "filament_type": [
         "PC"
@@ -263,7 +362,7 @@
         "1",
         "1"
     ],
-    "name": "3DXTECH PC 3DXLABS FR-PC @Bambu Lab H2D 0.4 nozzle",
+    "name": "3DXTECH PC 3DXLABS™ FR-PC @Bambu Lab H2D 0.4 nozzle",
     "no_slow_down_for_cooling_on_outwalls": [
         "0"
     ],
@@ -290,6 +389,10 @@
     "overhang_threshold_participating_cooling": [
         "95%"
     ],
+    "override_process_overhang_speed": [
+        "0",
+        "0"
+    ],
     "pre_start_fan_time": [
         "0"
     ],
@@ -313,6 +416,7 @@
         "2"
     ],
     "slow_down_min_speed": [
+        "20",
         "20"
     ],
     "supertack_plate_temp": [
