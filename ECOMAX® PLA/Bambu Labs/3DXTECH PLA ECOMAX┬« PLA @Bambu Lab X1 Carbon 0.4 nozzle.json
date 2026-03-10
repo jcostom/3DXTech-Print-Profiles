@@ -15,7 +15,7 @@
         "1"
     ],
     "compatible_printers": [
-        "Bambu Lab P1S 0.4 nozzle"
+        "Bambu Lab X1 Carbon 0.4 nozzle"
     ],
     "compatible_printers_condition": "",
     "compatible_prints": [],
@@ -28,6 +28,12 @@
     ],
     "cool_plate_temp_initial_layer": [
         "35"
+    ],
+    "cooling_perimeter_transition_distance": [
+        "10"
+    ],
+    "cooling_slowdown_logic": [
+        "uniform_cooling"
     ],
     "counter_coef_1": [
         "0"
@@ -74,23 +80,62 @@
     "fan_min_speed": [
         "100"
     ],
+    "filament_adaptive_volumetric_speed": [
+        "0"
+    ],
     "filament_adhesiveness_category": [
         "0"
+    ],
+    "filament_bridge_speed": [
+        "25"
     ],
     "filament_change_length": [
         "10"
     ],
+    "filament_change_length_nc": [
+        "10"
+    ],
+    "filament_cooling_before_tower": [
+        "10"
+    ],
     "filament_cost": [
-        "24.99"
+        "36"
     ],
     "filament_density": [
-        "1.26"
+        "1.24"
     ],
     "filament_deretraction_speed": [
         "nil"
     ],
+    "filament_dev_ams_drying_ams_limitations": [
+        ""
+    ],
+    "filament_dev_ams_drying_heat_distortion_temperature": [
+        "0"
+    ],
+    "filament_dev_ams_drying_temperature": [
+        "0"
+    ],
+    "filament_dev_ams_drying_time": [
+        "0"
+    ],
+    "filament_dev_chamber_drying_bed_temperature": [
+        "0"
+    ],
+    "filament_dev_chamber_drying_time": [
+        "0"
+    ],
+    "filament_dev_drying_cooling_temperature": [
+        "0"
+    ],
+    "filament_dev_drying_softening_temperature": [
+        "0"
+    ],
     "filament_diameter": [
         "1.75"
+    ],
+    "filament_enable_overhang_speed": [
+        "1"
     ],
     "filament_end_gcode": [
         "; filament end gcode \nM106 P3 S0\n"
@@ -99,9 +144,15 @@
         "Direct Drive Standard"
     ],
     "filament_flow_ratio": [
-        "0.98"
+        "0.965"
     ],
-    "filament_id": "Pd032548",
+    "filament_flush_temp": [
+        "0"
+    ],
+    "filament_flush_volumetric_speed": [
+        "0"
+    ],
+    "filament_id": "P8a2613a",
     "filament_is_support": [
         "0"
     ],
@@ -115,20 +166,53 @@
         "15"
     ],
     "filament_notes": "",
+    "filament_overhang_1_4_speed": [
+        "0"
+    ],
+    "filament_overhang_2_4_speed": [
+        "0"
+    ],
+    "filament_overhang_3_4_speed": [
+        "0"
+    ],
+    "filament_overhang_4_4_speed": [
+        "0"
+    ],
+    "filament_overhang_totally_speed": [
+        "10"
+    ],
     "filament_pre_cooling_temperature": [
+        "0"
+    ],
+    "filament_pre_cooling_temperature_nc": [
         "0"
     ],
     "filament_prime_volume": [
         "45"
     ],
+    "filament_prime_volume_nc": [
+        "60"
+    ],
+    "filament_printable": [
+        "3"
+    ],
     "filament_ramming_travel_time": [
-        "nil"
+        "0"
+    ],
+    "filament_ramming_travel_time_nc": [
+        "0"
     ],
     "filament_ramming_volumetric_speed": [
-        "nil"
+        "-1"
+    ],
+    "filament_ramming_volumetric_speed_nc": [
+        "-1"
     ],
     "filament_retract_before_wipe": [
         "nil"
+    ],
+    "filament_retract_length_nc": [
+        "10"
     ],
     "filament_retract_restart_extra": [
         "nil"
@@ -161,7 +245,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "3DXTECH PLA Basic @Bambu Lab P1S 0.4 nozzle"
+        "3DXTECH PLA ECOMAX® PLA @Bambu Lab X1 Carbon 0.4 nozzle"
     ],
     "filament_shrink": [
         "100%"
@@ -172,8 +256,26 @@
     "filament_start_gcode": [
         "; filament start gcode\n{if  (bed_temperature[current_extruder] >55)||(bed_temperature_initial_layer[current_extruder] >55)}M106 P3 S200\n{elsif(bed_temperature[current_extruder] >50)||(bed_temperature_initial_layer[current_extruder] >50)}M106 P3 S150\n{elsif(bed_temperature[current_extruder] >45)||(bed_temperature_initial_layer[current_extruder] >45)}M106 P3 S50\n{endif}\nM142 P1 R35 S40\n{if activate_air_filtration[current_extruder] && support_air_filtration}\nM106 P3 S{during_print_exhaust_fan_speed_num[current_extruder]} \n{endif}"
     ],
+    "filament_tower_interface_pre_extrusion_dist": [
+        "10"
+    ],
+    "filament_tower_interface_pre_extrusion_length": [
+        "0"
+    ],
+    "filament_tower_interface_print_temp": [
+        "-1"
+    ],
+    "filament_tower_interface_purge_volume": [
+        "20"
+    ],
+    "filament_tower_ironing_area": [
+        "4"
+    ],
     "filament_type": [
         "PLA"
+    ],
+    "filament_velocity_adaptation_factor": [
+        "1"
     ],
     "filament_vendor": [
         "3DXTECH"
@@ -189,6 +291,9 @@
     ],
     "filament_z_hop_types": [
         "nil"
+    ],
+    "first_x_layer_fan_speed": [
+        "0"
     ],
     "from": "User",
     "full_fan_speed_layer": [
@@ -219,12 +324,18 @@
         "0"
     ],
     "inherits": "",
-    "name": "3DXTECH PLA Basic @Bambu Lab P1S 0.4 nozzle",
+    "long_retractions_when_ec": [
+        "0"
+    ],
+    "name": "3DXTECH PLA ECOMAX® PLA @Bambu Lab X1 Carbon 0.4 nozzle",
+    "no_slow_down_for_cooling_on_outwalls": [
+        "0"
+    ],
     "nozzle_temperature": [
-        "220"
+        "225"
     ],
     "nozzle_temperature_initial_layer": [
-        "220"
+        "225"
     ],
     "nozzle_temperature_range_high": [
         "240"
@@ -241,6 +352,9 @@
     "overhang_threshold_participating_cooling": [
         "95%"
     ],
+    "override_process_overhang_speed": [
+        "0"
+    ],
     "pre_start_fan_time": [
         "0"
     ],
@@ -252,6 +366,9 @@
     ],
     "required_nozzle_HRC": [
         "3"
+    ],
+    "retraction_distances_when_ec": [
+        "10"
     ],
     "slow_down_for_layer_cooling": [
         "1"
@@ -269,7 +386,7 @@
         "35"
     ],
     "temperature_vitrification": [
-        "45"
+        "55"
     ],
     "textured_plate_temp": [
         "55"
@@ -277,5 +394,8 @@
     "textured_plate_temp_initial_layer": [
         "55"
     ],
-    "version": "1.9.0.18"
+    "version": "1.9.0.18",
+    "volumetric_speed_coefficients": [
+        ""
+    ]
 }
