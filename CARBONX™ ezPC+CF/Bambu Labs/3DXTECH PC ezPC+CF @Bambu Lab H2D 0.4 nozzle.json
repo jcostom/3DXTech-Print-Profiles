@@ -102,7 +102,7 @@
         "10"
     ],
     "filament_cost": [
-        "39.99"
+        "88"
     ],
     "filament_density": [
         "1.36"
@@ -125,9 +125,9 @@
     ],
     "filament_dev_ams_drying_time": [
         "12",
-        "4",
+        "8",
         "12",
-        "4"
+        "8"
     ],
     "filament_dev_chamber_drying_bed_temperature": [
         "90"
@@ -156,8 +156,8 @@
         "Direct Drive High Flow"
     ],
     "filament_flow_ratio": [
-        "0.94",
-        "0.94"
+        "0.9776",
+        "0.9776"
     ],
     "filament_flush_temp": [
         "0",
@@ -177,7 +177,7 @@
     ],
     "filament_max_volumetric_speed": [
         "8",
-        "8"
+        "12"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -258,7 +258,7 @@
     ],
     "filament_retraction_length": [
         "nil",
-        "0.4"
+        "nil"
     ],
     "filament_retraction_minimum_travel": [
         "nil",
